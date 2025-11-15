@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Proyek Website dari NERDARAvar">
+    <title>Our Portfolio - NERDARAvar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">NERDARAvar</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" style="margin-top: 80px;">
+        <h2 class="section-title">Portfolio Kami</h2>
+        <p class="section-subtitle">Kami telah dipercaya mengerjakan berbagai proyek website dari beragam industri. Setiap proyek yang kami tangani dijalankan dengan standar kualitas tinggi, memadukan desain yang menarik dengan fungsionalitas yang solid. Portofolio kami mencerminkan komitmen pada detail, inovasi, dan kepuasan klien.</p>
+        
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" data-filter="company">Company Profile</button>
+            <button class="filter-btn" data-filter="landing">Landing Page</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="ecommerce">
+                <div class="portfolio-overlay">
+                    <h3>Toko Fashion Online</h3>
+                    <p>Platform e-commerce modern dengan sistem pembayaran terintegrasi dan manajemen produk yang mudah</p>
+                    <span class="portfolio-tag">E-Commerce</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="company">
+                <div class="portfolio-overlay">
+                    <h3>PT. Digital Teknologi</h3>
+                    <p>Website company profile yang profesional dan informatif dengan desain corporate yang elegan</p>
+                    <span class="portfolio-tag">Company Profile</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="landing">
+                <div class="portfolio-overlay">
+                    <h3>Kampanye Produk Baru</h3>
+                    <p>Landing page yang persuasif dengan conversion rate tinggi dan call-to-action yang strategis</p>
+                    <span class="portfolio-tag">Landing Page</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ecommerce">
+                <div class="portfolio-overlay">
+                    <h3>Marketplace UMKM</h3>
+                    <p>Platform untuk menghubungkan UMKM dengan pelanggan, dilengkapi fitur multi-vendor</p>
+                    <span class="portfolio-tag">E-Commerce</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="company">
+                <div class="portfolio-overlay">
+                    <h3>Studio Kreatif</h3>
+                    <p>Portfolio website yang menampilkan karya dengan gaya unik dan interaktif</p>
+                    <span class="portfolio-tag">Company Profile</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="landing">
+                <div class="portfolio-overlay">
+                    <h3>Event Registration</h3>
+                    <p>Landing page untuk pendaftaran event dengan form terintegrasi dan payment gateway</p>
+                    <span class="portfolio-tag">Landing Page</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="company">
+                <div class="portfolio-overlay">
+                    <h3>Klinik Kesehatan</h3>
+                    <p>Website klinik dengan sistem booking online dan informasi layanan kesehatan lengkap</p>
+                    <span class="portfolio-tag">Company Profile</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ecommerce">
+                <div class="portfolio-overlay">
+                    <h3>Toko Furniture</h3>
+                    <p>E-commerce furniture dengan katalog 3D dan fitur customization produk</p>
+                    <span class="portfolio-tag">E-Commerce</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="landing">
+                <div class="portfolio-overlay">
+                    <h3>Real Estate Promotion</h3>
+                    <p>Landing page properti dengan virtual tour dan formulir inquiry yang efektif</p>
+                    <span class="portfolio-tag">Landing Page</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 4rem 2rem; background: var(--light); text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Proyek Anda Selanjutnya?</h2>
+            <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 2rem;">
+                Mari wujudkan website impian Anda seperti proyek-proyek sukses di atas. Hubungi kami untuk konsultasi gratis!
+            </p>
+            <a href="contact.html" class="cta-button">Mulai Proyek Anda →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 1rem;">NERDARAvar</h3>
+            <p style="margin-bottom: 2rem; color: var(--gray);">Wujudkan Website Impian Anda Bersama Kami</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">💼</a>
+                <a href="#" class="social-icon">🐦</a>
+            </div>
+            
+            <p>&copy; 2024 NERDARAvar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-float" title="Chat via WhatsApp">
+        💬
+    </a>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        ↑
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
