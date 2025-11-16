@@ -67,9 +67,9 @@ filterBtns.forEach(btn => {
         filterBtns.forEach(b => b.classList.remove('active'));
         // Add active class to clicked button
         btn.classList.add('active');
-        
+
         const filterValue = btn.getAttribute('data-filter');
-        
+
         portfolioItems.forEach(item => {
             if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                 item.style.display = 'block';
@@ -112,20 +112,20 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(contactForm);
         const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
         });
-        
+
         // Show success message
         alert('Terima kasih! Pesan Anda telah terkirim. Tim kami akan segera menghubungi Anda.');
-        
+
         // Reset form
         contactForm.reset();
-        
+
         // In real implementation, you would send this to a server
         console.log('Form data:', data);
     });
@@ -170,7 +170,7 @@ portfolioItems.forEach(item => {
 // Function to change hero grid images
 function changeHeroGridImages() {
     const gridImages = document.querySelectorAll('.grid-image');
-    
+
     // Array of image URLs
     const imageUrls = [
         'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
@@ -182,7 +182,7 @@ function changeHeroGridImages() {
         'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'
     ];
-    
+
     // Apply images to grid elements
     gridImages.forEach((img, index) => {
         const urlIndex = index % 4; // Use modulo to cycle through the first 4 images
@@ -193,4 +193,35 @@ function changeHeroGridImages() {
 // Initialize hero grid images
 document.addEventListener('DOMContentLoaded', () => {
     changeHeroGridImages();
+
+    // Add parallax effect to hero grids
+    const heroGrids = document.querySelectorAll('.hero-grid');
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.pageYOffset;
+
+        heroGrids.forEach((grid, index) => {
+            const speed = 0.5 + (index * 0.1);
+            const yPos = -(scrollPosition * speed);
+            grid.style.transform = `translateY(${yPos}px)`;
+        });
+    });
+
+    // Add mouse move effect to hero section
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+
+    hero.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        const moveX = (x - 0.5) * 20;
+        const moveY = (y - 0.5) * 20;
+
+        heroContent.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+
+    hero.addEventListener('mouseleave', () => {
+        heroContent.style.transform = 'translate(0, 0)';
+    });
 });
