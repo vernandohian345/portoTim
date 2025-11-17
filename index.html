@@ -6,6 +6,7 @@
     <meta name="description" content="NERDARAvar - Jasa Pembuatan Website Profesional untuk Bisnis Anda">
     <title>NERDARAvar - Jasa Pembuatan Website Profesional</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styleAlur.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -119,6 +120,157 @@
         </div>
     </section>
 
+    <section id="process-section">
+        <!-- Background Grid -->
+        <div class="grid-bg"></div>
+        
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="title">Alur Kerja Interaktif</h2>
+            <p class="subtitle">Jelajahi proses kami dalam pengalaman visual yang dinamis</p>
+        </div>
+
+        <!-- Stats Display -->
+        <div class="stats-display">
+            <div class="stat-item">
+                <span class="stat-label">Langkah:</span>
+                <span class="stat-value" id="activeStep">1</span>
+                <span class="stat-label">/</span>
+                <span class="stat-value">7</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Progress:</span>
+                <span class="stat-value" id="progressPercent">14%</span>
+            </div>
+        </div>
+
+        <!-- Main Orbit Container -->
+        <div class="orbit-container" id="orbitContainer">
+            <!-- Orbit Ring -->
+            <div class="orbit-ring"></div>
+            
+            <!-- Central Hub -->
+            <div class="central-hub" id="centralHub">
+                <i class="fas fa-rocket hub-icon"></i>
+                <div class="hub-title">Proses Kami</div>
+                <div class="hub-description">Klik untuk detail</div>
+            </div>
+
+            <!-- Connection Lines -->
+            <div class="connection-line" id="line1"></div>
+            <div class="connection-line" id="line2"></div>
+            <div class="connection-line" id="line3"></div>
+            <div class="connection-line" id="line4"></div>
+            <div class="connection-line" id="line5"></div>
+            <div class="connection-line" id="line6"></div>
+            <div class="connection-line" id="line7"></div>
+
+            <!-- Process Nodes -->
+            <div class="process-node" data-step="1" data-angle="0">
+                <div class="node-number">1</div>
+                <i class="fas fa-comments node-icon"></i>
+            </div>
+            <div class="process-node" data-step="2" data-angle="51">
+                <div class="node-number">2</div>
+                <i class="fas fa-clipboard-list node-icon"></i>
+            </div>
+            <div class="process-node" data-step="3" data-angle="103">
+                <div class="node-number">3</div>
+                <i class="fas fa-palette node-icon"></i>
+            </div>
+            <div class="process-node" data-step="4" data-angle="154">
+                <div class="node-number">4</div>
+                <i class="fas fa-code node-icon"></i>
+            </div>
+            <div class="process-node" data-step="5" data-angle="206">
+                <div class="node-number">5</div>
+                <i class="fas fa-sync-alt node-icon"></i>
+            </div>
+            <div class="process-node" data-step="6" data-angle="257">
+                <div class="node-number">6</div>
+                <i class="fas fa-rocket node-icon"></i>
+            </div>
+            <div class="process-node" data-step="7" data-angle="308">
+                <div class="node-number">7</div>
+                <i class="fas fa-tools node-icon"></i>
+            </div>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="detail-panel" id="detailPanel">
+            <div class="detail-close" id="detailClose">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="detail-icon" id="detailIcon">
+                <i class="fas fa-comments"></i>
+            </div>
+            <h2 class="detail-title" id="detailTitle">Konsultasi</h2>
+            <p class="detail-description" id="detailDescription">
+                Kami mendengarkan kebutuhan dan tujuan bisnis Anda secara detail untuk memahami visi yang ingin diwujudkan.
+            </p>
+            <div class="detail-progress">
+                <div class="detail-progress-bar" id="detailProgress"></div>
+            </div>
+            <div class="detail-time">
+                Estimasi waktu: <span id="estimateTime">2-3 hari</span>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <!-- <div class="control-panel">
+            <button class="control-btn" id="prevBtn" title="Sebelumnya">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="control-btn" id="playBtn" title="Auto Play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn" id="nextBtn" title="Selanjutnya">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="control-btn" id="resetBtn" title="Reset">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div> -->
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose">
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+        <p class="section-subtitle">Keunggulan yang membuat kami berbeda</p>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">✨</div>
+                <h3>Desain Modern</h3>
+                <p>Kami selalu mengikuti tren desain terkini untuk memastikan website Anda tampil fresh dan profesional.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">📱</div>
+                <h3>Mobile-Friendly</h3>
+                <p>Setiap website yang kami buat tampil sempurna di semua perangkat—smartphone, tablet, hingga desktop.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">⚡</div>
+                <h3>Pengerjaan Cepat</h3>
+                <p>Dengan manajemen proyek yang efisien, kami mampu menyelesaikan proyek tepat waktu tanpa mengorbankan kualitas.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💬</div>
+                <h3>Komunikasi Jelas</h3>
+                <p>Kami menjaga komunikasi yang terbuka dan responsif di setiap tahap proyek.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💰</div>
+                <h3>Harga Fleksibel</h3>
+                <p>Kami menawarkan paket layanan yang bisa disesuaikan dengan budget Anda tanpa mengurangi kualitas.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🛡️</div>
+                <h3>Support Berkelanjutan</h3>
+                <p>Hubungan kami tidak berakhir setelah website launching. Kami siap mendampingi Anda dengan layanan support berkelanjutan.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Quick Overview Section -->
     <section style="padding: 3rem 2rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
@@ -177,5 +329,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="js/jsAlur.js"></script>
 </body>
 </html>
