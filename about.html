@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tentang NERDARAvar - Tim Profesional Pembuat Website">
     <title>About Us - NERDARAvar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styleAlur.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -38,65 +40,121 @@
                 <p>Yang membedakan kami adalah pendekatan personal dan kolaboratif dalam setiap proyek. Kami percaya bahwa website terbaik lahir dari komunikasi yang jelas dan pemahaman mendalam tentang visi klien. Kami tidak hanya membuat website—kami membangun partnership jangka panjang.</p>
             </div>
             <div class="about-image">
-                💼
+                <img src="img/NerdaraVar v2.png" alt="NerdaraVar">
             </div>
         </div>
     </section>
 
-    <!-- Process/Workflow Section -->
-    <section id="process">
-        <h2 class="section-title">Alur Kerja Kami</h2>
-        <p class="section-subtitle">Proses terstruktur untuk hasil yang maksimal</p>
-        <div class="process-timeline">
-            <div class="process-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Konsultasi</h3>
-                    <p>Kami mendengarkan kebutuhan dan tujuan bisnis Anda secara detail untuk memahami visi yang ingin diwujudkan.</p>
-                </div>
+    <section id="process-section">
+        <!-- Background Grid -->
+        <div class="grid-bg"></div>
+        
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="title">Alur Kerja Interaktif</h2>
+            <p class="subtitle">Jelajahi proses kami dalam pengalaman visual yang dinamis</p>
+        </div>
+
+        <!-- Stats Display -->
+        <div class="stats-display">
+            <div class="stat-item">
+                <span class="stat-label">Langkah:</span>
+                <span class="stat-value" id="activeStep">1</span>
+                <span class="stat-label">/</span>
+                <span class="stat-value">7</span>
             </div>
-            <div class="process-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Perencanaan</h3>
-                    <p>Tim kami menyusun strategi, sitemap, dan blueprint yang detail sebagai fondasi proyek yang solid.</p>
-                </div>
+            <div class="stat-item">
+                <span class="stat-label">Progress:</span>
+                <span class="stat-value" id="progressPercent">14%</span>
             </div>
-            <div class="process-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Desain</h3>
-                    <p>Menciptakan mockup visual yang sesuai dengan brand identity dan ekspektasi Anda.</p>
-                </div>
+        </div>
+
+        <!-- Main Orbit Container -->
+        <div class="orbit-container" id="orbitContainer">
+            <!-- Orbit Ring -->
+            <div class="orbit-ring"></div>
+            
+            <!-- Central Hub -->
+            <div class="central-hub" id="centralHub">
+                <i class="fas fa-rocket hub-icon"></i>
+                <div class="hub-title">Proses Kami</div>
+                <div class="hub-description">Klik untuk detail</div>
             </div>
-            <div class="process-step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>Pengembangan</h3>
-                    <p>Mengubah desain menjadi website yang fungsional, responsif, dan siap digunakan.</p>
-                </div>
+
+            <!-- Connection Lines -->
+            <div class="connection-line" id="line1"></div>
+            <div class="connection-line" id="line2"></div>
+            <div class="connection-line" id="line3"></div>
+            <div class="connection-line" id="line4"></div>
+            <div class="connection-line" id="line5"></div>
+            <div class="connection-line" id="line6"></div>
+            <div class="connection-line" id="line7"></div>
+
+            <!-- Process Nodes -->
+            <div class="process-node" data-step="1" data-angle="0">
+                <div class="node-number">1</div>
+                <i class="fas fa-comments node-icon"></i>
             </div>
-            <div class="process-step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3>Revisi</h3>
-                    <p>Kami menyempurnakan setiap detail berdasarkan feedback Anda hingga hasilnya sempurna.</p>
-                </div>
+            <div class="process-node" data-step="2" data-angle="51">
+                <div class="node-number">2</div>
+                <i class="fas fa-clipboard-list node-icon"></i>
             </div>
-            <div class="process-step">
-                <div class="step-number">6</div>
-                <div class="step-content">
-                    <h3>Launch</h3>
-                    <p>Website Anda diluncurkan dengan testing menyeluruh untuk memastikan performa optimal.</p>
-                </div>
+            <div class="process-node" data-step="3" data-angle="103">
+                <div class="node-number">3</div>
+                <i class="fas fa-palette node-icon"></i>
             </div>
-            <div class="process-step">
-                <div class="step-number">7</div>
-                <div class="step-content">
-                    <h3>Maintenance</h3>
-                    <p>Dukungan berkelanjutan untuk menjaga website Anda tetap up-to-date dan berjalan sempurna.</p>
-                </div>
+            <div class="process-node" data-step="4" data-angle="154">
+                <div class="node-number">4</div>
+                <i class="fas fa-code node-icon"></i>
             </div>
+            <div class="process-node" data-step="5" data-angle="206">
+                <div class="node-number">5</div>
+                <i class="fas fa-sync-alt node-icon"></i>
+            </div>
+            <div class="process-node" data-step="6" data-angle="257">
+                <div class="node-number">6</div>
+                <i class="fas fa-rocket node-icon"></i>
+            </div>
+            <div class="process-node" data-step="7" data-angle="308">
+                <div class="node-number">7</div>
+                <i class="fas fa-tools node-icon"></i>
+            </div>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="detail-panel" id="detailPanel">
+            <div class="detail-close" id="detailClose">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="detail-icon" id="detailIcon">
+                <i class="fas fa-comments"></i>
+            </div>
+            <h2 class="detail-title" id="detailTitle">Konsultasi</h2>
+            <p class="detail-description" id="detailDescription">
+                Kami mendengarkan kebutuhan dan tujuan bisnis Anda secara detail untuk memahami visi yang ingin diwujudkan.
+            </p>
+            <div class="detail-progress">
+                <div class="detail-progress-bar" id="detailProgress"></div>
+            </div>
+            <div class="detail-time">
+                Estimasi waktu: <span id="estimateTime">2-3 hari</span>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button class="control-btn" id="prevBtn" title="Sebelumnya">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="control-btn" id="playBtn" title="Auto Play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn" id="nextBtn" title="Selanjutnya">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="control-btn" id="resetBtn" title="Reset">
+                <i class="fas fa-redo"></i>
+            </button>
         </div>
     </section>
 
@@ -166,5 +224,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="js/jsAlur.js"></script>
 </body>
 </html>

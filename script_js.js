@@ -225,3 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         heroContent.style.transform = 'translate(0, 0)';
     });
 });
+
+
+// about section
+ 
