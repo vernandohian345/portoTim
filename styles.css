@@ -833,6 +833,9 @@ footer {
     text-decoration: none;
     transition: all 0.3s;
 }
+.social-icon i {
+    font-size: 1.5rem;
+}
 
 .social-icon:hover {
     transform: translateY(-5px);
